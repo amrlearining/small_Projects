@@ -11,7 +11,7 @@ import pyautogui
 tim = 20 #time in minute
 tis = tim * 60 #converter time to seconds
 
-for x in range (1, 5, 1):
+for x in range (1, 4, 1):
    time.sleep(tis) 
    pyautogui.hotkey('win', 'm')
    duration = 1000
