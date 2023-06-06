@@ -1,7 +1,7 @@
 """
 @author: amro almaghraba
 Release: 05 JUN 2023
-@version: V1.0
+@version: V2.0
 This project to track your goals achieving 
 """
 from datetime import datetime
@@ -13,7 +13,7 @@ cal method to calculate the achieving percent you get
 """
 def cal(name, goal, now):
     percent = (now * 100) / goal
-    result = name + str(percent) + "%"
+    result = name + "\t" + str(percent) + "%"
     return result
 """
 must method calculate how many days still to due date,
@@ -35,10 +35,12 @@ def must(f, t):
     # Display the result
     a2 = (s * 100)/la_fiday
     a3 = 100 - a2
-    return "still: ", s, " day", "must be achieved: ", a3, "%"
+    result2 = "must be achieved: " + str(a3) + "%" + "\nstill: \t\t" + str(s) + " days"
+    return result2
 
-
-print (cal("eCommerce: ", 128, 61)) ##
+print (cal("eCommerce: ", 128, 66)) ##
 print(must(datetime(2023, 5, 12).date(), datetime(2023, 6, 27).date()))
+
+
 
 
