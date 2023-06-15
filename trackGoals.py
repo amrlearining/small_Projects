@@ -38,9 +38,7 @@ def must(f, t):
     result2 = "must be achieved: " + str(a3) + "%" + "\nstill: \t\t" + str(s) + " days"
     return result2
 
-print (cal("eCommerce: ", 128, 66)) ##
+print (cal("eCommerce: ", 128, 82)) ##
 print(must(datetime(2023, 5, 12).date(), datetime(2023, 6, 27).date()))
-
-
 
 
